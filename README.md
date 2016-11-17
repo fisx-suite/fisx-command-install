@@ -31,7 +31,7 @@ fis.set('component.defaultEndPoint', {type: 'npm'}); // default using `http://re
 fis.set('component.defaultEndPoint', {type: 'npm', value: '<your default registry>'});
 ```
 
-If using gitlab, some configures you can define:
+If using gitlab, some custom options you can configure:
 
 ```javascript
 fis.set('component.defaultGitlabDomain', 'http://<your gitlab domain>');
