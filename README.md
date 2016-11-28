@@ -19,6 +19,7 @@ fisx install gitlab:fis-components/jquery # install component from gitlab
 fisx install moye2=ecomfe/moye # specify the alias name `moye2`
 fisx install https://codeload.github.com/jquery/jquery/legacy.zip/3.0.0-alpha1 # install from url
 fisx intall ./xx/mypackage.zip # install from local
+fisx install npm:etpl --registry http://yourcustom.registry # specify custom registry
 ```
 
 By default, the component package information will always save to `dependencies` of `package.json`.
