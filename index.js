@@ -13,7 +13,8 @@ exports.options = {
     '-f, --force': 'force install latest version on conflict',
     '-p, --production': 'do not install project devDependencies',
     // '-s, --save': 'save component(s) dependencies into `package.json` file', // 默认都是保存的，没有不保存的场景。。
-    '-d, --save-dev': 'save component(s) dependencies into `package.json` devDependencies'
+    '-d, --save-dev': 'save component(s) dependencies into `package.json` devDependencies',
+    '--registry <url>': 'set the npm default registry to use'
 };
 
 exports.run = function (argv, cli, env) {
@@ -31,7 +32,8 @@ exports.run = function (argv, cli, env) {
         saveToDevDep: saveToDevDep,
         saveToDep: !saveToDevDep,
         installAllDep: true,
-        installAllDevDep: !isProduction
+        installAllDevDep: !isProduction,
+        registry: argv.registry
     };
 
     return pkgManage.initProjectRoot(env.configNameSearch[0], options, fis)
