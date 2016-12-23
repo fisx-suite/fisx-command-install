@@ -1,6 +1,8 @@
 fisx-command-install
 ========
 
+[![Dependency Status](https://david-dm.org/wuhy/fisx-command-install.svg)](https://david-dm.org/wuhy/fisx-command-install) [![devDependency Status](https://david-dm.org/wuhy/fisx-command-install/dev-status.svg)](https://david-dm.org/wuhy/fisx-command-install#info=devDependencies) [![NPM Version](https://img.shields.io/npm/v/fisx-command-install.svg?style=flat)](https://npmjs.org/package/fisx-command-install)
+
 > Install component package command for fisx.
 
 
